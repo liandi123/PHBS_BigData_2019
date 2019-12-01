@@ -10,7 +10,10 @@ Lian Di 1801212881
 * Consumer node: in a given network structure, there are some network nodes directly connected to the network of residential area. Each residential area network is presented as a consumer node in the given network structure diagram, and the video bandwidth consumption needs of different consumer nodes are different.
 * Video content server: the video content server stores the video content (such as movie, TV series, etc.), the video data flow of the video content server can flow to the consumer node through the network path composed of network nodes and links, the output capacity of the video content server has no upper limit, it can serve multiple consumer nodes, a consumer node can also simultaneously from multiple TV stations The video content server obtains the video stream. The cost of deploying a video content server (for example, 300000 yuan / set, 300K / set) is the same for all servers.
 * Example: As shown in the figure below, nodes numbered 0-49 (white node) in the network are network nodes, nodes numbered 50-58 (red node), that is, terminal nodes are consumer nodes, each edge is labeled with an edge attribute, the first number represents traffic capacity, and the second number represents the cost of renting 1Gbps bandwidth of the link.
-* This simple example has hundreds of links and millions of potential solutions.
+* **Volume:** There are hundreds of thousands of content servers and millions of consumer nodes in China, even the simple example below has hundreds of links and millions of potential solutions.
+* **Velocity**: New users are emerging, new servers are deployed, the Internet is constantly generating new content, and the demand of user nodes for CDN is constantly changing.
+* **Variety**: There are not only the cost and location data of the server, but also the demand and location data of the user, as well as the transmission cost data. The data is very complex and diverse.
+
 
 ![](https://github.com/liandi123/PHBS_BigData_2019/blob/master/hw1-pic1.png) 
 
