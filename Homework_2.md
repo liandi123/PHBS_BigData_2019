@@ -40,9 +40,9 @@ Training set: R2 = 0.7509
 
 Testing set: R2 = 0.2250  
 *question 3  
-| | P-value| 
-| :-: | :-: |
-|Intercept|1.43E-09|
+ | P-value
+ :-: | :-: 
+Intercept|1.43E-09
 |MEI|4.9E-20|
 |CO2|0.005053|
 |CH4|0.810146|
