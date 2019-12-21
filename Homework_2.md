@@ -55,7 +55,7 @@ CFC-12 | 0.00021
 TSI | 1.1E-09
 Aerosols | 5.41E-12
 
-* question 4 
+* question 4  
 The regression model is linear in parameters.  
 The mean of residuals is zero.  
 Homoscedasticity of residuals or equal variance.  
@@ -76,12 +76,12 @@ TSS_2 = sum((Y_2 - mean(Y_2)).^2)
 R2_2 = 1 - RSS_2/TSS_2
 ```
 ## Problem 2
-* question 1
+* question 1  
 L1 Regularization:(Lasso regression: )  
 J(θ)=1/2(Xθ−Y )T(Xθ−Y)+α||θ||1 （see pdf for right format）  
 L2 Regularization:(Ridge regression: )  
 J(θ)=1/2*(Xθ−Y )T(Xθ−Y)+1/2*α||θ||22  （see pdf for right format）   
-* question 2
+* question 2  
 ```Matlab
 function closed_form_2(lambda)
 M=csvread('climate_change_1.csv',1,0);
@@ -103,7 +103,7 @@ TSS_test = sum((Y_test - mean(Y_test)).^2);
 R2_test = ESS_test/TSS_test
 end
 ```
-* question 3
+* question 3  
 **In OLS:**
 Norm of theta: 124.6038  
 R2_train = 0.7509  
@@ -124,7 +124,7 @@ When lambda=0.1, theta =
    -0.8713  
 It will reduce the coefficient of unimportant prediction factors close to 0 and avoid overfitting, Temp is less sensitive to single variable, so it is more robust.  
 
-* question 4
+* question 4  
 ```Matlab
 for i = 0 : 4
     lambda = 10/10^i
@@ -147,12 +147,12 @@ MSE | 0.0136 | 0.0139 | 0.0152 | 0.0177 | 0.0190
 
 Choose the lambda with the least MSE, so choose Lambda = 0.001.  
 ## Problem 3
-* question 1
+* question 1  
 **Workflow:**
 For P features, from k = 1 to k = P:  
 Choose any k features from P features, establish C (P, K) models, and choose the best one (MSE minimum or R2 maximum);  
 Select an optimal model from the P optimal models (cross validation error).  
-* question 2
+* question 2  
 Use MEI, CO2, CFC-11 CFC-12 TSI Aerosols are significant in the model(Get rid of CH4, N2O), get the result:  
 
 Temp=  
