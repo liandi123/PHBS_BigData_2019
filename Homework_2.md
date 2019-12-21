@@ -24,7 +24,7 @@ ESS_test = sum((X_test * theta-mean(Y_test)).^2)
 TSS_test = sum((Y_test - mean(Y_test)).^2)
 R2_test = ESS_test/TSS_testEnd
 ```
-    question 2
+*question 2  
 Temp=
 -124.594
 +0.064205*MEI
@@ -34,12 +34,12 @@ Temp=
 -0.00663*CFC-11
 +0.003808*CFC-12
 +0.093141*TSI
--1.53761*Aerosols
+-1.53761*Aerosols  
 
-Training set: R2 = 0.7509
+Training set: R2 = 0.7509  
 
-Testing set: R2 = 0.2250
-    question 3
+Testing set: R2 = 0.2250  
+*question 3  
 | | P-value| 
 | :-: | :-: |
 |Intercept|1.43E-09|
