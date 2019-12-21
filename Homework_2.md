@@ -131,10 +131,10 @@ for i = 0 : 4
     closed_form_2(lambda)
 end
 ```
-Lambda | 0.001 | 0.01 | 0.1 | 1 | 10  
------- | --| ----- | ---- | --- | - | ---  
-R2_train | 0.7080 | 0.7044 | 0.6847 | 0.6671 | 0.6626  
-R2_test | 0.3970 | 0.4121 | 0.4670 | 0.5791 | 0.6246  
+Lambda | 0.001 | 0.01 | 0.1 | 1 | 10
+------ | ----- | ---- | --- | - | ---
+R2_train | 0.7080 | 0.7044 | 0.6847 | 0.6671 | 0.6626
+R2_test | 0.3970 | 0.4121 | 0.4670 | 0.5791 | 0.6246
 
 There are some ways for cross validation: Simple Cross Validation, 2-fold Cross Validation, and K-fold Cross Validation.  
 I choose to use Simple Cross Validation, get the MSE to measure the model.  
@@ -142,8 +142,14 @@ The original data is randomly divided into two groups, one is the training set, 
 So, MSE = RSS_test/24  
 
 Lambda | 0.001 | 0.01 | 0.1 | 1 | 10
------- | --| ----- | ---- | --- | - | ---
+------ | ----- | ---- | --- | - | ---
 MSE | 0.0136 | 0.0139 | 0.0152 | 0.0177 | 0.0190
+
+Lumbda | 0 | 0.001 | 0.01 | 0.1 | 1 | 10
+------ | --| ----- | ---- | --- | - | ---
+Training Data| 74.34% |70.80%| 70.44%| 68.47%| 66.71%|66.26%
+Testing Data | 16.07% | 39.70%| 41.21%| 46.70%| 57.91%| 62.46%
+MSE | 0.00818 | 0.0114 | 0.0117 | 0.0126 | 0.0144 | 0.0151
 
 Choose the lambda with the least MSE, so choose Lambda = 0.001.  
 ## Problem 3
