@@ -133,8 +133,8 @@ end
 ```
 Lambda | 0.001 | 0.01 | 0.1 | 1 | 10
 ------ | ----- | ---- | --- | - | ---
-R2_train | 0.7080 | 0.7044 | 0.6847 | 0.6671 | 0.6626
-R2_test | 0.3970 | 0.4121 | 0.4670 | 0.5791 | 0.6246
+R2_train | 0.7148 | 0.7117 | 0.6945 | 0.6795 | 0.6746
+R2_test | 0.5625 | 0.5853 | 0.6733 | 0.8468 | 0.9409
 
 There are some ways for cross validation: Simple Cross Validation, 2-fold Cross Validation, and K-fold Cross Validation.  
 I choose to use Simple Cross Validation, get the MSE to measure the model.  
