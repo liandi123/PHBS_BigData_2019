@@ -24,7 +24,7 @@ ESS_test = sum((X_test * theta-mean(Y_test)).^2)
 TSS_test = sum((Y_test - mean(Y_test)).^2)
 R2_test = ESS_test/TSS_testEnd
 ```
-*question 2  
+* question 2  
 Temp=
 -124.594
 +0.064205*MEI
@@ -38,16 +38,25 @@ Temp=
 
 Training set: R2 = 0.7509  
 
-Testing set: R2 = 0.2250  
-*question 3  
+Testing set: R2 = 0.2250 
+
+
+* question 3  
+
+Regressors | constant | MEI | CO2 | CH4 | N2O | CFC-11 | CFC-12 | TSI | Aerosols
+---------- | ---------| --- | --- | --- | --- | ------ | ------ | --- | --------
+Coefficients | -124.59| 0.0642 | 0.0065 | 0.0001 | -0.0165 | -0.0066 | 0.0038 | 0.0931 | -1.537
+t-statistics | -6.265 | 9.923 | 2.826 | 0.240 | -1.930 | -4.078 | 3.757 | 6.313 | -7.210
+p-value | 0.000 | 0.000 | 0.005 | 0.810 | 0.055 | 0.000 | 0.000 | 0.000 | 0.000
+
  | P-value
- :-: | :-: 
-Intercept|1.43E-09
-|MEI|4.9E-20|
-|CO2|0.005053|
-|CH4|0.810146|
-|N2O|0.054669|
-|CFC-11|5.96E-05|
-|CFC-12|0.00021|
-|TSI|1.1E-09|
-|Aerosols|5.41E-12|
+------- | -------
+Intercept | 1.43E-09
+MEI | 4.9E-20
+CO2 | 0.005053
+CH4 | 0.810146
+N2O | 0.054669
+CFC-11 | 5.96E-05
+CFC-12 | 0.00021
+TSI | 1.1E-09
+Aerosols | 5.41E-12
