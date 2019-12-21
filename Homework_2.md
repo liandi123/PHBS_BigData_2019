@@ -39,7 +39,7 @@ Temp=
 Training set: R2 = 0.7509
 
 Testing set: R2 = 0.2250
-* question 3
+question 3
 | | P-value| 
 | :-: | :-: |
 |Intercept|1.43E-09|
