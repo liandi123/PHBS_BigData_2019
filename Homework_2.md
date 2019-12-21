@@ -43,11 +43,11 @@ Testing set: R2 = 0.2250
 
 * question 3  
 
-   | constant | MEI | CO2 | CH4 | N2O | CFC-11 | CFC-12 | TSI | Aerosols
+Regressor | constant | MEI | CO2 | CH4 | N2O | CFC-11 | CFC-12 | TSI | Aerosols
 ---------- | ---------| --- | --- | --- | --- | ------ | ------ | --- | --------
 p-value | 1.43E-09 | 4.9E-20 | 0.005053 | 0.810146 | 0.054669 | 5.96E-05 | 0.00021 | 1.1E-09 | 5.41E-12
 
- | P-value
+Regressor | P-value
 ------- | -------
 Intercept | 1.43E-09
 MEI | 4.9E-20
