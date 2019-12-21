@@ -104,11 +104,11 @@ R2_test = ESS_test/TSS_test
 end
 ```
 * question 3  
-**In OLS:**
+**In OLS:**  
 Norm of theta: 124.6038  
 R2_train = 0.7509  
 R2_test = 0.2250  
-**In L2 Regularization(lambda = 0.1)：**
+**In L2 Regularization(lambda = 0.1)：**  
 Norm of theta: 0.8733  
 R2_train = 0.6945  
 R2_test = 0.6733  
@@ -131,10 +131,10 @@ for i = 0 : 4
     closed_form_2(lambda)
 end
 ```
-Lambda | 0.001 | 0.01 | 0.1 | 1 | 10
------- | --| ----- | ---- | --- | - | ---
-R2_train | 0.7080 | 0.7044 | 0.6847 | 0.6671| 0.6626
-R2_test | 0.3970 | 0.4121 | 0.4670 | 0.5791| 0.6246
+Lambda | 0.001 | 0.01 | 0.1 | 1 | 10  
+------ | --| ----- | ---- | --- | - | ---  
+R2_train | 0.7080 | 0.7044 | 0.6847 | 0.6671 | 0.6626  
+R2_test | 0.3970 | 0.4121 | 0.4670 | 0.5791 | 0.6246  
 
 There are some ways for cross validation: Simple Cross Validation, 2-fold Cross Validation, and K-fold Cross Validation.  
 I choose to use Simple Cross Validation, get the MSE to measure the model.  
@@ -148,7 +148,7 @@ MSE | 0.0136 | 0.0139 | 0.0152 | 0.0177 | 0.0190
 Choose the lambda with the least MSE, so choose Lambda = 0.001.  
 ## Problem 3
 * question 1  
-**Workflow:**
+**Workflow:**  
 For P features, from k = 1 to k = P:  
 Choose any k features from P features, establish C (P, K) models, and choose the best one (MSE minimum or R2 maximum);  
 Select an optimal model from the P optimal models (cross validation error).  
