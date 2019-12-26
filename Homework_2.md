@@ -55,6 +55,8 @@ CFC-12 | 0.00021
 TSI | 1.1E-09
 Aerosols | 5.41E-12
 
+As the p-value shows, MEI, CO2, CFC-11 CFC-12 TSI Aerosols are significant in the model.
+
 * question 4  
 The regression model is linear in parameters.  
 The mean of residuals is zero.  
